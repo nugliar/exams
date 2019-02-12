@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r8p23.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Dec  4 10:42:45 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20181204/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/l3/qy7_q6z14p520c3bnz6nj2500000gp/T/tmpc_7jfi/user log --pretty='%H - %an, %ad : %s'
+7e542f3e82a6c094ce9cb6b14a6c939ccbac8368 - Exam 42, Tue Dec 4 09:50:56 2018 -0800 : queue
+f7454337dc5182c826558719b9b828f66adaf219 - Exam 42, Tue Dec 4 09:10:54 2018 -0800 : equation
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/l3/qy7_q6z14p520c3bnz6nj2500000gp/T/tmpc_7jfi/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  478 Dec  4 10:42 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 10:42 equation
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 10:42 queue
+
+/var/folders/l3/qy7_q6z14p520c3bnz6nj2500000gp/T/tmpc_7jfi/user/equation:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1113 Dec  4 10:42 equation.c
+
+/var/folders/l3/qy7_q6z14p520c3bnz6nj2500000gp/T/tmpc_7jfi/user/queue:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2225 Dec  4 10:42 queue.c
+ 
+= str_maxlenoc =================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

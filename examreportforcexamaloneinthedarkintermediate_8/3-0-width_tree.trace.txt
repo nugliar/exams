@@ -1,0 +1,87 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r15p5.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Tue Oct  2 11:31:46 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20181002/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user log --pretty='%H - %an, %ad : %s'
+50f60ca30a467e5fa9717b063f9f601e922ec144 - Exam 42, Tue Oct 2 11:31:19 2018 -0700 : width_tree
+70a2367ef7d724d1f5bf57014d38e8862ddd4841 - Exam 42, Tue Oct 2 10:50:41 2018 -0700 : reverse_tree
+f228b009b1b68f2ceea41ef934574b81f7ff6751 - Exam 42, Tue Oct 2 10:34:57 2018 -0700 : -
+d460710bf3361307b44db0f59487e64877c66906 - Exam 42, Tue Oct 2 10:30:28 2018 -0700 : flood_fill
+be0c1cba3e03b174fc1931c841821752990e314c - Exam 42, Tue Oct 2 09:12:51 2018 -0700 : count_of_2
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1262 Oct  2 11:31 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct  2 11:31 count_of_2
+drwxr-xr-x  4 deepthought  deepthought   136 Oct  2 11:31 flood_fill
+drwxr-xr-x  3 deepthought  deepthought   102 Oct  2 11:31 reverse_tree
+drwxr-xr-x  3 deepthought  deepthought   102 Oct  2 11:31 width_tree
+
+/var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user/count_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1180 Oct  2 11:31 count_of_2.c
+
+/var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1669 Oct  2 11:31 flood.c
+-rw-r--r--  1 deepthought  deepthought  1052 Oct  2 11:31 flood.h
+
+/var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user/reverse_tree:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1181 Oct  2 11:31 reverse_tree.c
+
+/var/folders/py/n71dcdbj793glmwxr0860s7m0000gp/T/tmpCgzXK6/user/width_tree:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1449 Oct  2 11:31 width_tree.c
+ 
+= width_tree ===================================================================
+$> gcc -Wextra -Wall -Werror width_tree.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./nb6qg2u7ewyani9l1vh6bqqd 1
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./hkibnp01uwmwretnrusis0lc 2
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./c456vi7ew3f1lzxmbxxsgd7i 3
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./5hvseq2om6tun85u3n1x8djb 4
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./1v05xd5sxqdjiir3lh8lhtym 0 2 3
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

@@ -1,0 +1,136 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p23.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Sep 21 12:04:42 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20180921/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user log --pretty='%H - %an, %ad : %s'
+b9fa8bc7cad5b97a270b572331d15dd83302b209 - Exam 42, Fri Sep 21 12:04:20 2018 -0700 : perimeter
+cf12a9c3a65fd5e4ebce838c6b73899b1c55044e - Exam 42, Fri Sep 21 11:04:25 2018 -0700 : is_looping
+6c6c3986c885ac7fe81a7bff96459b240ea2a614 - Exam 42, Fri Sep 21 10:07:49 2018 -0700 : stack
+00256c24786dedf42d7bee85b122113737ef9baf - Exam 42, Fri Sep 21 09:40:01 2018 -0700 : print_doublon
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1011 Sep 21 12:04 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Sep 21 12:04 is_looping
+drwxr-xr-x  3 deepthought  deepthought   102 Sep 21 12:04 perimeter
+drwxr-xr-x  3 deepthought  deepthought   102 Sep 21 12:04 print_doublon
+drwxr-xr-x  3 deepthought  deepthought   102 Sep 21 12:04 stack
+
+/var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user/is_looping:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1300 Sep 21 12:04 is_looping.c
+
+/var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user/perimeter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1774 Sep 21 12:04 perimeter.c
+
+/var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user/print_doublon:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1226 Sep 21 12:04 print_doublon.c
+
+/var/folders/7d/1jzsmx4j7yn4gpx9nmb8j16c0000gp/T/tmpGvMKRN/user/stack:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1836 Sep 21 12:04 stack.c
+ 
+= perimeter ====================================================================
+$> gcc -Wextra -Wall -Werror main.c perimeter.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./wvf4w92iragbodzlqf5eqnf4 0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./zgzh6q1z3za0p0tsoxkx69n4 1
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./2bbfrefcgivvi1anacrwijnt 2
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./cflrg8qhp1ukzxl27248fffy 106
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./4kc4zefj8ea01fwxbo54a63y 4
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./bnaoatouqsle8ne0euxj3fwk 5
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./7ndets2gm2842bupkc3suax8 6
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./bh3xx6ue8eeerkic309hiw0j 7
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./cr79qn5dx19x666waeozay6x 107
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./3x5x7ps8l01cv8q1s4naxwkb 9
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./yxjzgmeknezkg8wqdtzv829c 208
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./2x8pm9nixqgit7gw7au1z2kb 421421
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./izqdsna4keiy13huhsh2o976 12
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./cn3bvhzsozemp9cjrtj532o5 13
+$> diff -U 3 user_output_test14 test14.output | cat -e
+--- user_output_test14	2018-09-21 12:04:47.000000000 -0700$
++++ test14.output	2018-09-21 12:04:47.000000000 -0700$
+@@ -1,2 +1,2 @@$
+ 90$
+-90 90$
++90$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,69 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r14p5.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Tue Dec  4 11:09:11 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20181204/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user log --pretty='%H - %an, %ad : %s'
+bdf2855db822348f739f39d1effdae329b17de0a - Exam 42, Tue Dec 4 11:08:55 2018 -0800 : str_maxlenoc
+7e542f3e82a6c094ce9cb6b14a6c939ccbac8368 - Exam 42, Tue Dec 4 09:50:56 2018 -0800 : queue
+f7454337dc5182c826558719b9b828f66adaf219 - Exam 42, Tue Dec 4 09:10:54 2018 -0800 : equation
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  802 Dec  4 11:09 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 11:09 equation
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 11:09 longest_sequence
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 11:09 queue
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  4 11:09 str_maxlenoc
+
+/var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user/equation:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1113 Dec  4 11:09 equation.c
+
+/var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user/longest_sequence:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1696 Dec  4 11:09 longest_sequence.c
+
+/var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user/queue:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2225 Dec  4 11:09 queue.c
+
+/var/folders/51/v4mp3kt54xqbmzxty1hlsp840000gp/T/tmpmqE1Qp/user/str_maxlenoc:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1999 Dec  4 11:09 str_maxlenoc.c
+ 
+= longest_sequence =============================================================
+$> gcc -Wextra -Wall -Werror main.c longest_sequence.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./vvo5jcej2q6mggen9mndknmr 657782 8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2018-12-04 11:09:13.000000000 -0800$
++++ test1.output	2018-12-04 11:09:12.000000000 -0800$
+@@ -1 +1 @@$
+-5$
++4$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

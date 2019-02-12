@@ -1,0 +1,61 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r13p3.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Tue Dec 18 10:17:57 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20181218/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/_w/gvc8931x4x7dp4d692dnh9wr0000gp/T/tmpkANMoM/user log --pretty='%H - %an, %ad : %s'
+488f6984b18c2de919abc1f503aa21ec9f15ce06 - Exam 42, Tue Dec 18 10:17:39 2018 -0800 : flood_fill
+5d1b66199dac299bc7a464a87e0cf6b5086131ff - Exam 42, Tue Dec 18 09:45:00 2018 -0800 : count_alpha
+b6cfd7266ac7b4d729e83c0bca9e0119f01a4f2b - Exam 42, Tue Dec 18 09:16:40 2018 -0800 : find_pivot
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/_w/gvc8931x4x7dp4d692dnh9wr0000gp/T/tmpkANMoM/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  779 Dec 18 10:17 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 18 10:17 count_alpha
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 18 10:17 find_pivot
+drwxr-xr-x  4 deepthought  deepthought  136 Dec 18 10:17 flood_fill
+
+/var/folders/_w/gvc8931x4x7dp4d692dnh9wr0000gp/T/tmpkANMoM/user/count_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1514 Dec 18 10:17 count_alpha.c
+
+/var/folders/_w/gvc8931x4x7dp4d692dnh9wr0000gp/T/tmpkANMoM/user/find_pivot:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1123 Dec 18 10:17 find_pivot.c
+
+/var/folders/_w/gvc8931x4x7dp4d692dnh9wr0000gp/T/tmpkANMoM/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought   995 Dec 18 10:17 header.h
+-rw-r--r--  1 deepthought  deepthought  1468 Dec 18 10:17 main.c
+ 
+= flood_fill ===================================================================
+$> gcc -Wextra -Wall -Werror main.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_flood_fill", referenced from:
+      _main in main-6debea.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

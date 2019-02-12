@@ -1,0 +1,80 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p26.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Jan 22 10:07:41 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-intermediate/exam_20190122/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/9g/h8kdyp395rd64845pc89p1yw0000gp/T/tmp7dWv9d/user log --pretty='%H - %an, %ad : %s'
+0f9924979f2496874f1e5c2daf02578b509a744a - Exam 42, Tue Jan 22 10:07:29 2019 -0800 : stack
+f95f6438729f029134935d7334b51e2c66684169 - Exam 42, Tue Jan 22 09:52:38 2019 -0800 : flood
+a670009a670866d5e1c93a4e9a9fcae3806f4fc5 - Exam 42, Tue Jan 22 09:13:56 2019 -0800 : count_of_2
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/9g/h8kdyp395rd64845pc89p1yw0000gp/T/tmp7dWv9d/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  781 Jan 22 10:07 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 22 10:07 count_of_2
+drwxr-xr-x  4 deepthought  deepthought  136 Jan 22 10:07 flood_fill
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 22 10:07 stack
+
+/var/folders/9g/h8kdyp395rd64845pc89p1yw0000gp/T/tmp7dWv9d/user/count_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1148 Jan 22 10:07 count_of_2.c
+
+/var/folders/9g/h8kdyp395rd64845pc89p1yw0000gp/T/tmp7dWv9d/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1502 Jan 22 10:07 flood_fill.c
+-rw-r--r--  1 deepthought  deepthought   184 Jan 22 10:07 t_point.h
+
+/var/folders/9g/h8kdyp395rd64845pc89p1yw0000gp/T/tmp7dWv9d/user/stack:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1840 Jan 22 10:07 stack.c
+ 
+= stack ========================================================================
+$> gcc -Wextra -Wall -Werror main.c stack.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./4une387ysw0tis35tuxbp4hx NULL
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./0duwoy02trqha4lw26mo51yf 1 2 3 4 5
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./z0rwx11yg28s3dra1mw4upc5 We wants it, we needs it. Must have the precious. They stole it from us. Sneaky little hobbitses. Wicked, tricksy, false!
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./jh0akrsbh1pp684l0yjoyj7l 42
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./9prjd31vl1slm9qyrrclbfuo I have a bad feeling about this
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

@@ -1,0 +1,72 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r2p15.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Jan 22 09:52:52 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-intermediate/exam_20190122/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/nx/m9ycfh6d5vsd7jb_gh3ty3_r0000gp/T/tmp4GmI5v/user log --pretty='%H - %an, %ad : %s'
+f95f6438729f029134935d7334b51e2c66684169 - Exam 42, Tue Jan 22 09:52:38 2019 -0800 : flood
+a670009a670866d5e1c93a4e9a9fcae3806f4fc5 - Exam 42, Tue Jan 22 09:13:56 2019 -0800 : count_of_2
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nx/m9ycfh6d5vsd7jb_gh3ty3_r0000gp/T/tmp4GmI5v/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  529 Jan 22 09:52 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 22 09:52 count_of_2
+drwxr-xr-x  4 deepthought  deepthought  136 Jan 22 09:52 flood_fill
+
+/var/folders/nx/m9ycfh6d5vsd7jb_gh3ty3_r0000gp/T/tmp4GmI5v/user/count_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1148 Jan 22 09:52 count_of_2.c
+
+/var/folders/nx/m9ycfh6d5vsd7jb_gh3ty3_r0000gp/T/tmp4GmI5v/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1502 Jan 22 09:52 flood_fill.c
+-rw-r--r--  1 deepthought  deepthought   184 Jan 22 09:52 t_point.h
+ 
+= flood_fill ===================================================================
+$> gcc -Wextra -Wall -Werror flood_fill.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./2x8et6nmulq58o2xeepps2b8 test1
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./tqrzfqpgg1i0520j310v7xtn test2
+$> diff -U 3 user_output_test2 test2.output | cat -e
+--- user_output_test2	2019-01-22 09:52:54.000000000 -0800$
++++ test2.output	2019-01-22 09:52:54.000000000 -0800$
+@@ -1,5 +1,5 @@$
+-1 1 1 1 1 1 1 1 $
+-1 0 0 0 1 0 0 1 $
+-1 0 0 1 0 0 0 1 $
+-1 0 1 0 0 0 0 1 $
+-1 1 0 0 0 0 0 0 $
++F F F F F F F F $
++F 0 0 0 F 0 0 F $
++F 0 0 1 0 0 0 F $
++F 0 1 0 0 0 0 F $
++F F 0 0 0 0 0 0 $
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

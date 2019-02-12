@@ -1,0 +1,80 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p41.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Aug 21 12:33:08 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20180821/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/fh/19hhdqts37n6p6pnn_nq_wjh0000gp/T/tmpfNnIDO/user log --pretty='%H - %an, %ad : %s'
+30ffd02d3b27ce897c3256ea3d65bd053e4eca68 - Exam 42, Tue Aug 21 12:32:37 2018 -0700 : stack
+d5f272899a88ab90fa3f4170e06593986f49af79 - Exam 42, Tue Aug 21 11:11:53 2018 -0700 : flood_fill
+7e909ad83929062cc49cb068c506bd190a9486aa - Exam 42, Tue Aug 21 09:24:23 2018 -0700 : is_anagram
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/fh/19hhdqts37n6p6pnn_nq_wjh0000gp/T/tmpfNnIDO/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  827 Aug 21 12:33 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought  136 Aug 21 12:33 flood_fill
+drwxr-xr-x  3 deepthought  deepthought  102 Aug 21 12:33 is_anagram
+drwxr-xr-x  3 deepthought  deepthought  102 Aug 21 12:33 stack
+
+/var/folders/fh/19hhdqts37n6p6pnn_nq_wjh0000gp/T/tmpfNnIDO/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1949 Aug 21 12:33 flood_fill.c
+-rw-r--r--  1 deepthought  deepthought  1282 Aug 21 12:33 flood_fill.h
+
+/var/folders/fh/19hhdqts37n6p6pnn_nq_wjh0000gp/T/tmpfNnIDO/user/is_anagram:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1335 Aug 21 12:33 is_anagram.c
+
+/var/folders/fh/19hhdqts37n6p6pnn_nq_wjh0000gp/T/tmpfNnIDO/user/stack:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1894 Aug 21 12:33 stack.c
+ 
+= stack ========================================================================
+$> gcc -Wextra -Wall -Werror main.c stack.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./7jks5ag46v3z0brekwu5vb57 NULL
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2018-08-21 12:33:09.000000000 -0700$
++++ test1.output	2018-08-21 12:33:09.000000000 -0700$
+@@ -3,7 +3,7 @@$
+ pop : (null)$
+ peek : (null)$
+ is empty : YES$
+-peek : C|o^?$
++peek : NULL$
+ NULL $
+ is empty : NO$
+ TEST 2 --------------------------$
+@@ -14,7 +14,7 @@$
+ stack 1 : peek : (null)$
+ stack 2 : is empty : NO$
+ TEST 3 --------------------------$
+-stack 2 : peek : C|o^?$
++stack 2 : peek : NULL$
+ stack 1 : is empty : NO$
+ stack 2 : is empty : YES$
+ stack 1 : pop : NULL$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

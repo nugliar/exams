@@ -1,0 +1,148 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r3p18.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Nov 27 09:33:33 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-intermediate/exam_20181127/rsharipo
+
+= Git history ==================================================================
+$> git -C /var/folders/m3/17gsyhkx0hbgswjtp5jml2nh0000gp/T/tmptju3jA/user log --pretty='%H - %an, %ad : %s'
+1e717371c4cfbd9716c42a36079ad44a1f993042 - Exam 42, Tue Nov 27 09:33:07 2018 -0800 : height_tree
+0f51409782c25746800cb26e94213e87ce34f7a7 - Exam 42, Tue Nov 27 09:09:00 2018 -0800 : count_of_2
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/m3/17gsyhkx0hbgswjtp5jml2nh0000gp/T/tmptju3jA/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  500 Nov 27 09:33 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 27 09:33 count_of_2
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 27 09:33 height_tree
+
+/var/folders/m3/17gsyhkx0hbgswjtp5jml2nh0000gp/T/tmptju3jA/user/count_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1128 Nov 27 09:33 count_of_2.c
+
+/var/folders/m3/17gsyhkx0hbgswjtp5jml2nh0000gp/T/tmptju3jA/user/height_tree:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1353 Nov 27 09:33 height_tree.c
+ 
+= height_tree ==================================================================
+$> gcc -Wextra -Wall -Werror height_tree.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./nao5ereamxekm0f6p8sgq1dd 0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./ty0cuq3o03c0pb54657k4zfr 1
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./6vzayghj6u1vdkrre4h9cjim 2
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./u4ss6b4vs3ns52f260wjo71h 106
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./hqqeq21458wxqflzpgg6f5q6 4
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./c2h5bdyyexqkbwl15l16e5ll 5
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./yqopdztld61ubg06nga3q6p4 6
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./1mcdr71bcob9xinmbhyv1p17 7
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./7amgp2auq102i0sby5g8n8p9 107
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./q3zuktlph0ik84sij3lwfcwi 9
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./icnkp5l82hm9ce4e41gio2n8 208
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./3r5ipj5xa81cbf327bkv87tp 421421
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./pehszb38ns3mq4ii1xltx2yo 12
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./n1n5lobvjpi812p66olngvjo 13
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./263cncgjnbxblrrsbjkuwpz0 14
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./p6szikloqwvn9oekwmucy5t9 15
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./260selz8f6hm980h9shvw7ge 1001
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./24y9p68i2vy25ynjkkd8zeuv 17
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./v03v6e63t5mkx1lqg2kfwowk 47
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./bl7ukn9j89ho1hbaamlwubly 116
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
