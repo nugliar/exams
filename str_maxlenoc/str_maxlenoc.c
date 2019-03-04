@@ -24,15 +24,15 @@ int	ft_strlen(char *s)
 	return (len);
 }
 
-int		str_in(char *coin, char *shit)
+int		str_in(char *coin, char *src)
 {
 	int i = 0;
 
 	if (ft_strlen(coin) == 0)
 		return (0);
-	while (coin[i] && shit[i])
+	while (coin[i] && src[i])
 	{
-		if (coin[i] != shit[i])
+		if (coin[i] != src[i])
 			return (0);
 		i++;
 	}
@@ -41,15 +41,15 @@ int		str_in(char *coin, char *shit)
 	return (1);
 }
 
-char	*ft_strstr(char *shit, char *coin)
+char	*ft_strstr(char *src, char *coin)
 {
 	int	i = 0;
 
 	if (!coin)
 		return (NULL);
-	while (shit[i])
+	while (src[i])
 	{
-		if (str_in(coin, shit + i))
+		if (str_in(coin, src + i))
 			return (coin);
 		i++;
 	}
